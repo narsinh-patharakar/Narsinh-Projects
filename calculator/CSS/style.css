@@ -1,0 +1,117 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #e0e3eb;
+}
+
+.calculator {
+    max-width: 320px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 10px 20px 20px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+input {
+    width: 100%;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding: 20px 16px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #000e1a;
+}
+
+.buttons {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.buttons button {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    font-weight: 500;
+    background-color: #eee;
+    transition: all ease 1s;
+}
+
+.buttons button:active {
+    transform: scale(0.90);
+}
+
+.operator {
+    color: #2f9fff;
+}
+
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}
+
+/* Enable smooth scrolling */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+
+/* .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    row-gap: 16px;
+border: 1px black solid;
+padding: 18px;
+background-color: #000;
+border-radius: 16px;
+justify-items: center;
+} 
+
+input {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    color: #000;
+    border-radius: 16px;
+    padding: 4px 16px;
+    font-size: 28px;
+    margin-bottom: 16px;
+    text-align: end;
+    width: 100%;
+}
+
+.btn {
+    font-size: 24px;
+    font-weight: 600;
+    background-color: rgb(230, 230, 230);
+    border-radius: 8px;
+}
+
+*/
