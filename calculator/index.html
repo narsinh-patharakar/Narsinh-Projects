@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- External CSS -->
     <link rel="stylesheet" href="./CSS/style.css" />
-    <!-- External Script -->
-    <link rel="stylesheet" href="./JS/script.js" />
+    <!-- Adding title Image -->
+    <link
+      rel="shortcut icon"
+      href="./Assests/Logo/calculator (1).png"
+      type="image/x-icon"
+    />
     <title>Calculator</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <h1 class="title">Calculator</h1>
     <div id="calculator" class="calculator">
-        <input type="text" placeholder="welcome">
-        <div class="buttons">
-            <button type="button" class="operator" data-value="AC">AC</button>
-            <button type="button" class="operator" data-value="DEL">DEL</button>
-            <button type="button" class="operator" data-value="%">%</button>
-            <button type="button" class="operator" data-value="/">/</button>
-            <button type="button" data-value="7">7</button>
-            <button type="button" data-value="8">8</button>
-            <button type="button" data-value="9">9</button>
-            <button type="button" class="operator" data-value="*">*</button>
-            <button type="button" data-value="4">4</button>
-            <button type="button" data-value="5">5</button>
-            <button type="button" data-value="6">6</button>
-            <button type="button" class="operator" data-value="-">-</button>
-            <button type="button" data-value="1">1</button>
-            <button type="button" data-value="2">2</button>
-            <button type="button" data-value="3">3</button>
-            <button type="button" class="operator" data-value="+">+</button>
-            <button type="button" data-value="0">0</button>
-            <button type="button" data-value="00">00</button>
-            <button type="button" data-value=".">.</button>
-            <button type="button" class="operator" data-value="=">=</button>
-        </div>
+      <input type="text" value="" class="display" placeholder="0" />
+      <div class="buttons">
+        <button type="button" class="clear">C</button>
+        <button type="button" class="delete img">
+          <img src="./Assests/Imgs/clear (2).png" alt="clear_img" />
+        </button>
+        <button type="button" class="operator button">%</button>
+        <button type="button" class="operator button">/</button>
+        <button type="button" class="button">7</button>
+        <button type="button" class="button">8</button>
+        <button type="button" class="button">9</button>
+        <button type="button" class="operator button">*</button>
+        <button type="button" class="button">4</button>
+        <button type="button" class="button">5</button>
+        <button type="button" class="button">6</button>
+        <button type="button" class="operator button">-</button>
+        <button type="button" class="button">1</button>
+        <button type="button" class="button">2</button>
+        <button type="button" class="button">3</button>
+        <button type="button" class="operator button">+</button>
+        <button type="button" class="button">0</button>
+        <button type="button" class="button">00</button>
+        <button type="button" class="button">.</button>
+        <button type="button" class="result">=</button>
+      </div>
     </div>
-</body>
 
+    <!-- External Script -->
+    <script src="./JS/script.js"></script>
+  </body>
 </html>
